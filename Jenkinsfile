@@ -4,7 +4,7 @@ node{
   }
   stage('Compile-Package'){
     // get maven package
-    def mvnHOME = tool 'Default'
+    def M2_HOME = tool 'Default'
     sh "${mvnHOME}/bin/mvn package"
   }
 }
