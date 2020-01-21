@@ -4,7 +4,7 @@ node{
   }
   stage('Compile-Package'){
     // get maven package
-    def M2_HOME = tool 'Default'
+    def mvnHOME = tool name: 'C:\\Program Files\\Maven\\apache-maven-3.2.2-bin\\apache-maven-3.2.2\\bin', type: 'maven'
     sh "${mvnHOME}/bin/mvn package"
   }
 }
