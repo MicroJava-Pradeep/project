@@ -1,6 +1,6 @@
 node{
   stage('SCM Checkout'){
-    git 'https://github.com/MicroJava-Pradeep/project'
+    git 'https://github.com/MicroJava-Pradeep/project.git'
   }
   stage('Compile-Package'){
     // get maven package
